@@ -1,0 +1,15 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Data privacy
+data/resumes/*.pdf
+
+# OS / editor
+.DS_Store
+.vscode/
+
+# Env secrets
+.env
