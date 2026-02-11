@@ -21,3 +21,34 @@ This project ranks PDF resumes against a job description using NLP.
 2. Install dependencies:
    ```bash
    pip install -r requirements.txt
+
+## 📊 Example Output
+
+When testing multiple resumes against the same job description, the system ranks candidates based on relevance.
+
+Example run:
+
+--- RESUME MATCH RANKING ---
+
+Alex Johnson.pdf | 31.5% -> Strong Match
+
+Miguel_Pacheco_Outlier_Resume.pdf | 5.9% -> Low Match
+
+--- WHY THESE MATCHED (Top 2) ---
+
+#1: Alex Johnson.pdf | 31.5% -> Strong Match
+
+- data
+- machine
+- learning
+- analysis
+- python
+
+#2: Miguel_Pacheco_Outlier_Resume.pdf | 5.9% -> Low Match
+
+- experience
+- data
+- learning
+- machine
+
+This demonstrates that resumes closely aligned with the job description score significantly higher than more generic resumes.

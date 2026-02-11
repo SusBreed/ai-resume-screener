@@ -17,7 +17,6 @@ def main():
 
     clean_resumes = {name: clean_text(text) for name, text in raw_resumes.items()}
 
-    # ✅ THIS WAS MISSING
     ranked = rank_resumes(job_clean, clean_resumes)
 
     if not ranked:
